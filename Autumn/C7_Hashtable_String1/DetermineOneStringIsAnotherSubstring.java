@@ -1,4 +1,4 @@
-package C7_Hashtable_String1;
+package Autumn.C7_Hashtable_String1;
 
 /**
  * Created by HaoYu on 2017/10/9.

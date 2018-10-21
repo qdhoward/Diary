@@ -1,4 +1,4 @@
-package C7_Hashtable_String1;
+package Autumn.C7_Hashtable_String1;
 
 import java.util.HashSet;
 import java.util.Set;

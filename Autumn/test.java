@@ -1,7 +1,7 @@
 package Autumn;
 
-import C3_LinkedList.ListNode;
-import C7_Hashtable_String1.RemoveRepeatedCharacters4;
+import Autumn.C3_LinkedList.ListNode;
+import Autumn.C7_Hashtable_String1.RemoveRepeatedCharacters4;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package C21_Enhanced2;
+package Autumn.C21_Enhanced2;
 
-import C3_LinkedList.ListNode;
+import Autumn.C3_LinkedList.ListNode;
 
 import java.util.Comparator;
 import java.util.List;

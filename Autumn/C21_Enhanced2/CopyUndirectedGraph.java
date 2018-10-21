@@ -1,6 +1,6 @@
-package C21_Enhanced2;
+package Autumn.C21_Enhanced2;
 
-import C5_Heap_BFS1.GraphNode;
+import Autumn.C5_Heap_BFS1.GraphNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

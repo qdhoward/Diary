@@ -1,6 +1,6 @@
-package Midterm2;
+package Autumn.Midterm2;
 
-import C4_BST.TreeNode;
+import Autumn.C4_BST.TreeNode;
 
 /**
  * Created by HaoYu on 2017/11/14.
