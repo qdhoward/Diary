@@ -69,16 +69,22 @@ public class s_10_20_2018 {
         return false;
     }
 
-    public boolean problem2_dp (int min, int max, int[] target, int[][] buttons) {
+    public boolean problem2_dp (int[] target, int[][] buttons) {
         //dp[i] represents the lowest upperbound it can reach where i is the lowerbound.
-        int[] dp = new int[max];
+        int[] dp = new int[target[1] + 1];
         //base case
         dp[buttons[0][0]] = buttons[0][1];
         dp[buttons[1][0]] = buttons[1][1];
         dp[buttons[2][0]] = buttons[2][1];
 
-        for (int i = 0; i < target[0]; i++) {
-
+        for (int i = 0; i <= target[1]; i++) {
+            int a = i - buttons[0][0] > 0 ? 0 : dp[i - buttons[0][0]] + buttons[0][1];
+            int b = i - buttons[1][0] > 0 ? 0 : dp[i - buttons[1][0]] + buttons[1][1];
+            int c = i - buttons[2][0] > 0 ? 0 : dp[i - buttons[2][0]] + buttons[2][1];
+            dp[i] = Math.min(Math.min(a, b), c);
+            if (i >= target[0] && dp[i] <= target[1]) {
+                return true;
+            }
         }
         return false;
     }
