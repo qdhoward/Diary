@@ -1,9 +1,6 @@
 package NewAutumn.topic;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class GraphRepresentation {
     public int findShortestPath(int[][] maze, int[] start, int[] exit) {
@@ -110,5 +107,106 @@ public class GraphRepresentation {
         }
         return res;
     }
+
+    public List<String> crossRiver() {
+        Map<String, Boolean> positionA = new HashMap<>();
+        positionA.put("wolf", true);
+        positionA.put("sheep", true);
+        positionA.put("grass", true);
+        positionA.put("farmer", true);
+        List<String> res = new ArrayList<>();
+        while (positionA.size() != 2) {
+            if (positionA.containsKey("wolf")) {
+                if ((!positionA.containsKey("sheep") && !positionA.containsKey("grass")) || positionA.containsKey("sheep")) {
+                    positionA.remove("wolf");
+                    res.add("wolf");
+                }
+            }
+            if (positionA.containsKey("sheep")) {
+                if (positionA.containsKey("wolf") && positionA.containsKey("grass")) {
+                    positionA.remove("sheep");
+                    res.add("sheep");
+                }
+            }
+            if (positionA.containsKey("grass")) {
+                if ((!positionA.containsKey("sheep") && !positionA.containsKey("wolf")) || positionA.containsKey("sheep")) {
+                    positionA.remove("grass");
+                    res.add("grass");
+                }
+            }
+        }
+        return res;
+    }
+
+    public int turnOnLight() {
+        int[][] matrix = new int[4][4];
+        int[] cost = new int[] {0};
+        turnOnLightHelper(0, matrix, cost);
+        return cost[0];
+
+    }
+
+    private void turnOnLightHelper(int index, int[][] matrix, int[] cost) {
+        if (checkIsAllLighted(matrix)) {
+            return;
+        }
+        int x = index % 4;
+        int y = index / 4;
+        toggleNeighbor(matrix, x, y);
+        cost[0] = cost[0] + 1;
+        turnOnLightHelper(index + 1, matrix, cost);
+        toggleNeighbor(matrix, x, y);
+        cost[0] = cost[0] - 1;
+        turnOnLightHelper(index + 1, matrix, cost);
+    }
+
+    private boolean checkIsAllLighted(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private void toggleNeighbor(int[][] matrix, int x, int y) {
+        if (x - 1 >= 0) {
+            matrix[x - 1][y] = 1 - matrix[x - 1][y];
+        }
+        if (y - 1 >= 0) {
+            matrix[x][y - 1] = 1 - matrix[x][y - 1];
+        }
+        if (x + 1 < matrix[0].length) {
+            matrix[x + 1][y] = 1 - matrix[x + 1][y];
+        }
+        if (y + 1 < matrix.length) {
+            matrix[x][y + 1] = 1 - matrix[x][y + 1];
+        }
+    }
+
+    class Radar{
+        public double x;
+        public double y;
+        public double radius;
+        public Radar(double x, double y, double radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+    }
+
+    public boolean canvehiclePass(List<Radar> radars) {
+
+    }
+
+    private boolean areCirclesOverlapped(Radar a, Radar b) {
+        double distance = Math.pow(Math.abs(a.x - b.x), 2) + Math.pow(Math.abs(a.y - b.y), 2);
+        return distance < Math.pow(a.radius + b.radius, 2);
+    }
+
+    private build
+
 
 }
