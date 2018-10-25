@@ -3,6 +3,7 @@ package NewAutumn.topic;
 import java.util.*;
 
 public class GraphRepresentation {
+    //Problem1
     public int findShortestPath(int[][] maze, int[] start, int[] exit) {
         boolean[][] visited = new boolean[maze.length][maze[0].length];
         int costInPath = 1;
@@ -190,23 +191,42 @@ public class GraphRepresentation {
         public double x;
         public double y;
         public double radius;
+        public List<Radar> neighbors;
         public Radar(double x, double y, double radius) {
             this.x = x;
             this.y = y;
             this.radius = radius;
+            this.neighbors = new ArrayList<>();
         }
     }
 
-    public boolean canvehiclePass(List<Radar> radars) {
+    public boolean canvehiclePass(Radar[] radars) {
+        buildGraph(radars);
+        Set<Radar> visited = new HashSet<>();
+        for (int i = 0; i < radars.length; i++) {
 
+        }
+        return false;
     }
+
 
     private boolean areCirclesOverlapped(Radar a, Radar b) {
         double distance = Math.pow(Math.abs(a.x - b.x), 2) + Math.pow(Math.abs(a.y - b.y), 2);
         return distance < Math.pow(a.radius + b.radius, 2);
     }
 
-    private build
+    private void buildGraph(Radar[] radars) {
+        for (int i = 0; i < radars.length; i++) {
+            for (int j = i + 1; j < radars.length; j++) {
+                if (areCirclesOverlapped(radars[i], radars[j])) {
+                    radars[i].neighbors.add(radars[j]);
+                }
+            }
+        }
+    }
 
-
+    public Map<String, Integer> currecnyExchange(Map<String, Float> rate) {
+        //Assuming the input entry is formatted as <A/B, 2.0>
+        return new HashMap<String, Integer>();
+    }
 }
