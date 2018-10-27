@@ -55,37 +55,4 @@ public class s_10_20_2018 {
         int[] coordinate_b = coordinate.get(b);
         return Math.abs(coordinate_a[0] - coordinate_b[0]) + Math.abs(coordinate_a[1] - coordinate_b[1]);
     }
-
-    public boolean problem2_dfs (int min, int max, int[] target, int[][] buttons) {
-        // T: O(3^(target(max)/button_min)) S: O(target(max)/button_min)
-        if (min >= target[0]) {
-            return max <= target[1];
-        }
-        for (int[] button : buttons) {
-            if (problem2_dfs(min + button[0], max + button[1], target, buttons)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean problem2_dp (int[] target, int[][] buttons) {
-        //dp[i] represents the lowest upperbound it can reach where i is the lowerbound.
-        int[] dp = new int[target[1] + 1];
-        //base case
-        dp[buttons[0][0]] = buttons[0][1];
-        dp[buttons[1][0]] = buttons[1][1];
-        dp[buttons[2][0]] = buttons[2][1];
-
-        for (int i = 0; i <= target[1]; i++) {
-            int a = i - buttons[0][0] > 0 ? 0 : dp[i - buttons[0][0]] + buttons[0][1];
-            int b = i - buttons[1][0] > 0 ? 0 : dp[i - buttons[1][0]] + buttons[1][1];
-            int c = i - buttons[2][0] > 0 ? 0 : dp[i - buttons[2][0]] + buttons[2][1];
-            dp[i] = Math.min(Math.min(a, b), c);
-            if (i >= target[0] && dp[i] <= target[1]) {
-                return true;
-            }
-        }
-        return false;
-    }
 }
