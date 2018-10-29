@@ -1,4 +1,4 @@
-package NewAutumn.topic;
+package NewAutumn.topic.GraphRepresentation;
 
 import java.util.*;
 
