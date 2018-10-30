@@ -7,7 +7,7 @@ public class index {
 //        System.out.println(test.allSumCombination(4));
 //        System.out.println(test.allSumPermutation(3));
 //
-//        isPalindrome test2 = new isPalindrome();
+//        IsPalindrome test2 = new IsPalindrome();
 //        System.out.println(test2.solution("google"));
 //        System.out.println(test2.solution("aab"));
 //        System.out.println(test2.allPalindrome("aaaabb"));

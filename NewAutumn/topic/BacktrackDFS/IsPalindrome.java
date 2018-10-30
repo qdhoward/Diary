@@ -2,7 +2,7 @@ package NewAutumn.topic.BacktrackDFS;
 
 import java.util.*;
 
-public class isPalindrome {
+public class IsPalindrome {
     public boolean solution(String s) {
         //Time O(n) Space O(n)
         Map<Character, Integer> occurrence = new HashMap<>();
