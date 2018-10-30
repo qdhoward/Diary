@@ -75,6 +75,7 @@ public class isPalindrome {
             if (visited.add(array[i])) {
                 swap(array, i, index);
                 getAllPermutationHelper(array, res, index + 1);
+                swap(array, i, index);
             }
         }
     }
