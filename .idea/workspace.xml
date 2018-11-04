@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3c25638-4aa7-4c32-be8d-5d413fe165c5" name="Default Changelist" comment="find all valid expressions that equal target">
-      <change afterPath="$PROJECT_DIR$/NewAutumn/mock/saturday/s_11_03_2018.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/mock/thursday/UnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/LargestIslandValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/MinTreeHeight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumOfIslandStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumberOfIsland.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumberOfLake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/RobotClean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/KTreeNode.java" afterDir="false" />
+    <list default="true" id="a3c25638-4aa7-4c32-be8d-5d413fe165c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +65,7 @@
     <session id="1300064405">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="java" value="52" />
           <entry key="xml" value="1" />
         </counts>
@@ -83,7 +73,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="52" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -92,13 +82,13 @@
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="15" />
           <entry key="java" value="20564" />
-          <entry key="txt" value="142" />
+          <entry key="txt" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="20564" />
-          <entry key="PLAIN_TEXT" value="158" />
+          <entry key="PLAIN_TEXT" value="199" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -113,83 +103,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumberOfIsland.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumberOfLake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="43" lean-forward="true" selection-start-line="2" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/LargestIslandValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/index.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/MinTreeHeight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/RobotClean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumOfIslandStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="65" lean-forward="true" selection-start-line="5" selection-end-line="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -245,7 +159,6 @@
         <option value="$PROJECT_DIR$/NewAutumn/topic/BacktrackDFS/BobbleGame.java" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/BacktrackDFS/isPalindrome.java" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/BacktrackDFS/index.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/ConnectivityDFSAndBFS1/index.java" />
         <option value="$PROJECT_DIR$/util/test.java" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/ConnectivityDFSAndBFS1/RobotCleaning.java" />
@@ -263,6 +176,7 @@
         <option value="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumOfIslandStream.java" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/MinTreeHeight.java" />
         <option value="$PROJECT_DIR$/NewAutumn/topic/Connectivity2/index.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -293,6 +207,11 @@
             <path>
               <item name="Diary" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diary" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diary" type="b2602c69:ProjectViewProjectNode" />
@@ -364,7 +283,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/HaoYu/Documents/Diary/NewAutumn/topic/ConnectivityDFSAndBFS1/GoIsDead.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541347516419" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541351526706" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -491,7 +410,7 @@
       <workItem from="1540559806488" duration="10126000" />
       <workItem from="1540735663000" duration="31018000" />
       <workItem from="1541035828567" duration="810000" />
-      <workItem from="1541115913079" duration="34849000" />
+      <workItem from="1541115913079" duration="35555000" />
     </task>
     <task id="LOCAL-00001" summary="First Day!">
       <created>1539893931815</created>
@@ -556,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541132724204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2018.10.29-2018.11.4 周三周四周六全部题目完成">
+      <created>1541347595829</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541347595829</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110570000" />
+    <option name="totallyTimeSpent" value="111276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +499,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25035766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -584,13 +509,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22304833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22304833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40520447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928064" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946752" weight="0.27051672" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49946752" visible="true" weight="0.26889715" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.19655521" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928064" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3283767" />
@@ -683,7 +608,8 @@
     <MESSAGE value="find all valid expressions that equal target" />
     <MESSAGE value="try to solve robot cleaning" />
     <MESSAGE value="topological sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="topological sort" />
+    <MESSAGE value="2018.10.29-2018.11.4 周三周四周六全部题目完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018.10.29-2018.11.4 周三周四周六全部题目完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Autumn/C5_Heap_BFS1/BTisCompletedOrNot.java">
@@ -872,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -993,16 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumOfIslandStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="65" lean-forward="true" selection-start-line="5" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumberOfLake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1041,6 +950,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewAutumn/topic/Connectivity2/NumOfIslandStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="65" lean-forward="true" selection-start-line="5" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
