@@ -99,13 +99,16 @@ public class UnionFind {
                 for (int k = j + 1; k < w; k++) {
                     String similar = swap(array[i], j, k);
                     Integer index = wordsToIndex.get(similar);
-                    if (index != null && index > i) {
-                        //TODO index > i要有，去重，两个similar的元素只需要union一次就可以了
-                        union(index, i, parent, rank);
+                    if (index != null) {
+                        //TODO 注意要check一下是否已经在一个组里面了
+                        int parent1 = find(i, parent);
+                        int parent2 = find(index, parent);
+                        if (parent1 != parent2) union(i, index, parent, rank);
                     }
                 }
             }
         }
+        System.out.println(Arrays.toString(parent));
         int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (parent[i] == -1) {

@@ -18,9 +18,9 @@ public class s_10_27_2018 {
                 }
                 downsteamTasks.get(dep).add(t);
             }
-            incoming.put(t, t.tasks.size());//入度为0的点压入
+            incoming.put(t, t.tasks.size());
             if (t.tasks.size() == 0) {
-                queue.addLast(t);
+                queue.addLast(t);//入度为0的点压入
             }
         }
         List<Task> res = new ArrayList<>();
