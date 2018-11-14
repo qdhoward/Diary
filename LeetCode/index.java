@@ -1,10 +1,13 @@
 package LeetCode;
 
+import java.util.*;
+
 public class index {
     public static void main(String[] args) {
-        DecodeString394 test = new DecodeString394();
-        System.out.println(test.decodeString("2[abc]3[cd]ef"));
-
-        System.out.println((char) 97);
+        WordBreak139 test = new WordBreak139();
+        List<String> a = new ArrayList<String>();
+        a.add("apple");
+        a.add("pen");
+        System.out.println(test.wordBreak("applepenapple", a));
     }
 }
