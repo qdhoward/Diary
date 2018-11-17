@@ -9,6 +9,7 @@ import java.util.Queue;
 public class s_11_17_2018 {
     //P1
     public int sumEquation(int[] array, int target) {
+        //Time O(2^n) Space O(n)
         if (array == null || array.length == 0) {
             return 0;
         }
@@ -27,9 +28,11 @@ public class s_11_17_2018 {
     }
 
     public int sumEquation2(int[] array, int target) {
+        //Time O(n * target) ? Space O(n * target)
         if (array == null || array.length == 0) {
             return 0;
         }
+        //TODO offset is related to sumOf Target! 相当于一直加
         return helper2(array, 0, target, new int[array.length][target * 3]);
     }
     private int helper2(int[] array, int index, int target, int[][] dp) {
@@ -47,13 +50,13 @@ public class s_11_17_2018 {
     }
 
     //P2
-    private static final char SPLITER = ',';
-
+    //Time O(V + E) Space O(height)
+    private static final char SPLITTER = ',';
     private void preorder(KTreeNode root, StringBuilder sb) {
         sb.append(root.value);
-        sb.append(SPLITER);
+        sb.append(SPLITTER);
         sb.append(root.neighbors.size());
-        sb.append(SPLITER);
+        sb.append(SPLITTER);
         for (KTreeNode nei : root.neighbors) {
             preorder(nei, sb);
         }
@@ -78,12 +81,13 @@ public class s_11_17_2018 {
     }
 
     //P4
-    public List<List<Integer>> allFactors(int num) {
-        if (num == 0) {
+    //Time O(num!) Space O(num)
+    public List<List<Integer>> allFactors(int n) {
+        if (n == 0) {
             return new ArrayList<>();
         }
         List<List<Integer>> res = new ArrayList<>();
-        allFactorsHelper(num, num, new ArrayList<>(), res);
+        allFactorsHelper(n, n - 1, new ArrayList<>(), res);//TODO 不包括 1 和 num本身，所以传入n - 1
         return res;
     }
 
@@ -92,7 +96,7 @@ public class s_11_17_2018 {
             res.add(new ArrayList<>(curRes));
         }
         for (int i = 2; i <= Math.min(lastFactor, num); i++) {//TODO math.min比较上个因子和当前数!!!!
-            if (num % 2 == 0) {
+            if (num % i == 0) {
                 curRes.add(i);
                 allFactorsHelper(num / i, i, curRes, res);
                 curRes.remove(curRes.size() - 1);

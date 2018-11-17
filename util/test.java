@@ -1,5 +1,5 @@
 package util;
-
+//Time O(2^n) Space O(n)
 public class test {
     public static void main (String[] args) {
         int[][] directions = new int[][] {
