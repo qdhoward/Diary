@@ -25,7 +25,7 @@ public class BacktrackDFS {
         if (n == 1) {
             res.add(new ArrayList<>(curResult));//Need to make a copy of the curResult!
         }
-        for (int i = 2; i <= Math.min(lastFactor, n); i++) {
+        for (int i = 2; i <= Math.min(lastFactor, n); i++) {//TODO math.min比较上个因子和当前数!!!!
             if (n % i == 0) {
                 curResult.add(i);
                 allFactorHelper(n / i, i, curResult, res);
