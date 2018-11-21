@@ -1,4 +1,4 @@
-package Midterm2;
+package Autumn.Midterm2;
 
 /**
  * Created by HaoYu on 2017/11/14.
@@ -60,6 +60,6 @@ public class MinCut {
         return cuts[len - 1];
     }
     public static void main(String[] args){
-        System.out.print(new MinCut().minCuts("ababbbabbababa"));
+        System.out.print(new MinCut().minCuts2("aabaacddc"));
     }
 }
