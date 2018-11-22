@@ -39,8 +39,4 @@ public class MinCutPalindrome {
         System.out.println(backindex);
         return dp[s.length() - 1];
     }
-    public static void main(String[] args) {
-        MinCutPalindrome test = new MinCutPalindrome();
-        System.out.println(test.minCut("aabaacddc"));
-    }
 }
