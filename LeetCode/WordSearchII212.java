@@ -10,10 +10,12 @@ public class WordSearchII212 {
         TrieNode[] map;
         Boolean isWord;
         String word;
+        Integer count;
         public TrieNode () {
             this.map = new TrieNode[26];
             this.isWord = false;
             this.word = null;
+            this.count = 0;
         }
     }
 
@@ -41,7 +43,6 @@ public class WordSearchII212 {
                 dfs(board, visited, i, j, root, curRes, res);
             }
         }
-        System.out.println(search("riven"));
         return res;
     }
 
@@ -53,14 +54,10 @@ public class WordSearchII212 {
         visited[x][y] = true;
         if (nextNode.isWord && curRes.add(nextNode.word)) {
             res.add(nextNode.word);
-            for (int i = 0; i < board.length; i++) {
-                for (int j = 0; j < board[0].length; j++) {
-                    dfs(board, new boolean[board.length][board[0].length], 0, 0, root, curRes, res);
-                }
+            if (nextNode.count == 0) {
+                visited[x][y] = false;
+                return;
             }
-//            curRes.remove(nextNode.word);
-            visited[x][y] = false;
-            return;
         }
         for (int[] direction : directions) {
             dfs(board, visited, x + direction[0], y + direction[1], nextNode, curRes, res);
@@ -80,22 +77,10 @@ public class WordSearchII212 {
                 node.map[ch - 'a'] = new TrieNode();
             }
             node = node.map[ch - 'a'];
+            node.count += 1;
         }
         node.isWord = true;
         node.word = word;
-    }
-
-    private boolean search(String word) {
-        TrieNode node = root;
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            System.out.println(ch);
-            System.out.println(ch - 'a');
-            if (node.map[ch - 'a'].isWord) {
-                return true;
-            }
-            node = node.map[ch - 'a'];
-        }
-        return false;
+        node.count -= 1;
     }
 }
