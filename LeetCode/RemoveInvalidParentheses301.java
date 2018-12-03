@@ -38,4 +38,10 @@ public class RemoveInvalidParentheses301 {
             res.add(reversed);
         }
     }
+
+    public static void main(String[] args) {
+        RemoveInvalidParentheses301 test = new RemoveInvalidParentheses301();
+
+        System.out.println(test.removeInvalidParentheses(")(("));
+    }
 }
