@@ -99,11 +99,11 @@ public class s_11_10_2018 {
     public List<Integer> findAllNodes(TreeNode root, TreeNode target, int k) {
         List<Integer> res = new ArrayList<>();
         if (k == 0) {
-            res.add(target.key);
+            res.add(target.val);
             return res;
         }
         Map<TreeNode, Integer> distanceToTarget = new HashMap<>();
-        findPathToTarget(root, target.key, distanceToTarget);
+        findPathToTarget(root, target.val, distanceToTarget);
         distanceToTarget.put(target, 0);
         findNodesByLevel(target, k, res);
         for (Map.Entry<TreeNode, Integer> entry : distanceToTarget.entrySet()) {
@@ -127,7 +127,7 @@ public class s_11_10_2018 {
             return;
         }
         if (distance == k) {//Why it can't returned
-            res.add(root.key);
+            res.add(root.val);
             return;
         }
         if (distanceToTarget.containsKey(root.left) || distance + 1 <= k) {
@@ -147,7 +147,7 @@ public class s_11_10_2018 {
             for (int i = 0; i < size; i++) {
                 TreeNode cur = queue.poll();
                 if (curHeight == height) {
-                    res.add(cur.key);
+                    res.add(cur.val);
                 }
                 if (cur.left != null) {
                     queue.offer(cur.left);
@@ -164,7 +164,7 @@ public class s_11_10_2018 {
         if (root == null) {
             return -1;
         }
-        if (root.key == target) {
+        if (root.val == target) {
             return 0;
         }
         int left = findPathToTarget(root.left, target, distance);

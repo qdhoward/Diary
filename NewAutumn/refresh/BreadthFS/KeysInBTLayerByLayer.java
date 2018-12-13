@@ -21,7 +21,7 @@ public class KeysInBTLayerByLayer {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode cur = queue.poll();
-                curLayer.add(cur.key);
+                curLayer.add(cur.val);
                 if (cur.left != null) {
                     queue.offer(cur.left);
                 }
