@@ -2,21 +2,12 @@ package LeetCode;
 
 import org.omg.PortableInterceptor.INACTIVE;
 import util.KTreeNode;
+import util.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class SerializeandDeserializeBinaryTree297 {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     private static final char SPLITTER = ',';
     private void preorder(TreeNode root, StringBuilder sb) {
         if (root == null) {
