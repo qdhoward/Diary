@@ -9,7 +9,7 @@ public class util {
     private static int[][] directions = new int[][] {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(Integer.MIN_VALUE - Integer.MIN_VALUE);
     }
 
     private boolean isOutOfBound(int x, int y, int row, int col) {
