@@ -15,7 +15,7 @@ public class SlidingWindowMaximum239 {
             while (!deque.isEmpty() && deque.peekFirst() < i - k + 1) {
                 deque.pollFirst();
             }
-            //TODO 左边是栈顶（有效元素），那么要保证一旦栈顶元素出去，后面续上来的是最大的，所以要一直坚持右边的元素
+            //TODO 左边是栈顶（有效元素），那么要保证一旦栈顶元素出去，后面续上来的是最大的，所以要一直坚持比较右边的元素
             while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
                 deque.pollLast();
             }

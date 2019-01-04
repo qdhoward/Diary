@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class LASAllResults {
+    //Longest Ascending Subsequence
     public List<Integer> solution(int[] array) {
         if (array == null || array.length == 0) {
             return new ArrayList<>();
@@ -27,7 +28,7 @@ public class LASAllResults {
                 }
             }
         }
-        System.out.println(Arrays.toString(backindex));
+//        System.out.println(Arrays.toString(backindex));
         List<Integer> res = new ArrayList<>();
         res.add(array[maxIndex]);
         int nextIndex = maxIndex;

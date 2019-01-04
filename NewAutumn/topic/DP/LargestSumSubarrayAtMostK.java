@@ -1,8 +1,6 @@
 package NewAutumn.topic.DP;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class LargestSumSubarrayAtMostK {
     public int maxSum(int[] array, int k) {
@@ -38,6 +36,24 @@ public class LargestSumSubarrayAtMostK {
         int res = Integer.MIN_VALUE;
         for (int i = k; i < array.length; i++) {
             res = Math.max(res, prefixSum[i] - mins[i]);
+        }
+        return res;
+    }
+
+    private int[] buildMinStack(int[] prefixSum, int k) {
+        int[] res = new int[prefixSum.length - k + 1];
+        Deque<Integer> deque = new LinkedList<>();
+        for (int i = 0; i < prefixSum.length; i++) {
+            while (!deque.isEmpty() && deque.peekFirst() < i - k + 1) {
+                deque.pollFirst();
+            }
+            while (!deque.isEmpty() && prefixSum[i] < prefixSum[deque.peekLast()]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+            if (i >= k - 1) {
+                res[i - k + 1] = deque.peekLast();
+            }
         }
         return res;
     }

@@ -35,7 +35,6 @@ public class LargestExpression {
                     continue;
                 }
                 for (int k = i; k < j; k++) {
-                    dp[i][j] = Math.max(dp[i][k] + dp[k + 1][j], dp[i][j]);
                     dp[i][j] = Math.max(dp[i][k] * dp[k + 1][j], dp[i][j]);
                     dp[i][j] = Math.max(dpSmallest[i][k] * dpSmallest[k + 1][j], dp[i][j]);
 

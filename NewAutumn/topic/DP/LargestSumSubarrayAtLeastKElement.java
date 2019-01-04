@@ -13,7 +13,6 @@ public class LargestSumSubarrayAtLeastKElement {
         for (int i = 0; i < array.length; i++) {
             min = Math.min(min, array[i]);
             dp[i] = min;
-            prefixSum[i] = curSum;
         }
 
         int res = Integer.MIN_VALUE;

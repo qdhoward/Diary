@@ -11,7 +11,7 @@ public class SearchinRotatedSortedArray33 {
             if (array[mid] == target) return mid;
             if (array[mid] <= array[right]){// array[mid] < array[right] also OK
                 if(target <= array[right] && target >= array[mid]){
-                    left = mid +1;
+                    left = mid + 1;
                 }
                 else{
                     right = mid - 1;

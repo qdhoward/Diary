@@ -8,6 +8,7 @@ public class test {
                 {0, -1},
                 {-1, 0}
         };
-        System.out.println("12345".substring(1));
+        StringBuilder[] res = new StringBuilder[4];
+        System.out.println(res[0]);
     }
 }
