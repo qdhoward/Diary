@@ -1,4 +1,4 @@
-package Midterm2;
+package Autumn.Midterm2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,15 +34,16 @@ public class printIfBlocks {
     private void printBlocks(List<String> cur) {
         int count = 0;
         for (String s : cur) {
-            if (s == "{") {
+            if (s.equals( "{")) {
                 printSpaces(count);
                 System.out.println("if{");
                 count++;
             }
-            if (s == "}") {
+            if (s.equals("}")) {
+                //TODO 要先减！！
+                count--;
                 printSpaces(count);
                 System.out.println("}");
-                count--;
             }
         }
     }
