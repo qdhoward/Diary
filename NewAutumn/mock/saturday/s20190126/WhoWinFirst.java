@@ -5,17 +5,7 @@ public class WhoWinFirst {
         //Assuming Sum(1,2...T) >= W
         boolean[] used = new boolean[T + 1];
         int[] memo = new int[W + 1];
-        for (int i = 1; i < used.length; i++) {
-            if (!used[i]) {
-                used[i] = true;
-                if (!helper(used, W - i, memo)) {
-                    used[i] = false;
-                    return true;
-                }
-                used[i] = false;
-            }
-        }
-        return false;
+        return helper(used, W, memo);
     }
 
     private boolean helper (boolean[] used, int W, int[] memo) {
@@ -41,6 +31,6 @@ public class WhoWinFirst {
     }
 
     public static void main(String[] args) {
-        System.out.println(new WhoWinFirst().firstWin(5, 6));
+        System.out.println(new WhoWinFirst().firstWin(5, 10));
     }
 }
