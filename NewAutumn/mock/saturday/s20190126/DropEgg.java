@@ -36,6 +36,7 @@ public class DropEgg {
                     left = right = mid;
                 }
             }
+            //别忘了加1啊，每丢一次要加1啊！！！！！
             int res = 1 + Math.min(Math.max(helper(left - 1, egg - 1, dp), helper(floor - left, egg, dp)),
                     Math.max(helper(right - 1, egg - 1, dp), helper(floor - right, egg, dp)));
             dp.put(floor * 100 + egg, res);
