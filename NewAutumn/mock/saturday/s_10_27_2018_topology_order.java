@@ -2,7 +2,7 @@ package NewAutumn.mock.saturday;
 
 import java.util.*;
 
-public class s_10_27_2018 {
+public class s_10_27_2018_topology_order {
     class Task {
         List<Task> tasks; //Dependencies
     }

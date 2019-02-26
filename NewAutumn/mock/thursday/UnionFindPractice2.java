@@ -80,7 +80,7 @@ public class UnionFindPractice2 {
     private void safeUnion(int[] parent, int[] rank, int i, int j) {
         int a = find(parent, i);
         int b = find(parent, j);
-        if (a != b || a == -1) {
+        if (a != b) {
             union(parent, rank, a, b);
         }
     }
