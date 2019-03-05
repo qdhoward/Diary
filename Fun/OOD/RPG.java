@@ -34,16 +34,19 @@ public class RPG {
             }
             return false;
         }
+
+        private Weapon findWeapon() {
+            for (int j = 0; j < array.length; j++) {
+                if (array[j] instanceof Weapon) {
+                    return (Weapon) array[j];
+                }
+            }
+            return null;
+        }
     }
 
     public class Weapon extends Item {
         Weapon(int value) {
-            this.value = value;
-        }
-    }
-
-    public class Recover extends Item {
-        Recover(int value) {
             this.value = value;
         }
     }
@@ -53,7 +56,7 @@ public class RPG {
         //TODO random generate item and place it into grid
     }
 
-    class Point{
+    private class Point{
         int x;
         int y;
         Point(int x, int y) {
@@ -67,6 +70,7 @@ public class RPG {
         int moveRange;
         int x;
         int y;
+        Weapon weapon;
         Backpack backpacks;
 
         Player(int Hp, int moveRange, int backpackSize) {
@@ -75,6 +79,7 @@ public class RPG {
             this.x = 0;
             this.y = 0;
             this.backpacks = new Backpack(backpackSize);
+            this.weapon = null;
         }
 
         private boolean isOutOfBound(int x, int y) {
@@ -127,6 +132,14 @@ public class RPG {
 
         public boolean remove(Item i) {
             return this.backpacks.remove(i);
+        }
+
+        public Weapon useWeapon() throws Exception{
+            Weapon tmp = this.backpacks.findWeapon();
+            remove(tmp);
+            this.backpacks.add(this.weapon);
+            this.weapon = tmp;
+            return this.weapon;
         }
     }
 }
