@@ -44,7 +44,7 @@ public class RestaurantReservation {
 //    }
 
     interface BaseTable {
-        
+
     }
 
     class TableWithBooster implements BaseTable {
