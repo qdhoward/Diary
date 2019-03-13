@@ -14,7 +14,7 @@ public class MyHashSet {
     }
 
     public int position(int key) {
-        return Integer.hashCode(key) / buckets;
+        return Integer.hashCode(key) % itemsPerBucket;
     }
 
     public void add(int key) {
